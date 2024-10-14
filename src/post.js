@@ -1,12 +1,21 @@
 class Post {
-  #number
+  #number = 0
+  #subscribers = []
+
   constructor (name) {
     this.name = name
-    this.#number = 0
   }
 
   get summary () {
     return `${this.name} publication number ${this.#number}`
+  }
+
+  getSubscribers () {
+    return this.#subscribers.map(user => user.name).join(',')
+  }
+
+  attach (user) {
+    this.#subscribers.push(user)
   }
 }
 
