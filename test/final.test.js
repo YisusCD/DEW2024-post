@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
 const User = require('../src/user')
-const Client = require('./src/client')
+const Client = require('../src/client')
 const Gazette = require('../src/gazette')
 const Magazine = require('../src/magazine')
 const Newspaper = require('../src/newspaper')
